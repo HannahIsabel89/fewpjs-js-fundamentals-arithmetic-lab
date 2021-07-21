@@ -7,7 +7,15 @@
   <title>JavaScript Lab</title>
 </head>
 <body>
-  hello
-  <script type="text/javascript" src="index.js"></script>
+  <div id="mocha"></div>
+  <!-- Include Mocha and set it up for BDD-style testing. -->
+  <script src="node_modules/mocha/mocha.js"></script>
+  <script>mocha.setup('bdd');</script>
+  <!-- Include Chai as the matcher library. -->
+  <script src="node_modules/chai/chai.js"></script>
+  <!-- Include the student's JavaScript file. -->
+  <script src="index.js"></script>
+  <!-- Include the JavaScript file containing the tests. -->
+  <script src="test/indexTest.js"></script>
 </body>
 </html>
